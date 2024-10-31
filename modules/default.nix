@@ -1,10 +1,11 @@
-_: {
-  imports = [
-    ./cursor.nix
-    ./tmux.nix
-    ./git.nix
-    ./htop.nix
-    ./alacritty.nix
-    ./zsh.nix
-  ];
+{ config, lib, pkgs, ... }: {
+    imports = [
+        ./alacritty
+        ./btop
+        ./git
+        ./nixvim
+        ./ssh
+        ./tmux
+        ./zsh
+    ];
 }

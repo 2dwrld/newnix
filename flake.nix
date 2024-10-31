@@ -26,12 +26,14 @@
         {
             nixosConfigurations.nix = nixpkgs.lib.nixosSystem {
                 specialArgs = { 
-                                inherit inputs; 
-                                nixpkgs.config.allowUnfree = true; 
-                            };
+                    inherit inputs; 
+                    nixpkgs.config.allowUnfree = true; 
+                    };
+
                 modules = [
+                    ./modules
                     ./hosts/modules
-		    ./hosts/packages.nix
+        		    ./hosts/packages.nix
                     ./hosts/configuration/configuration.nix
 
                     inputs.home-manager.nixosModules.default
