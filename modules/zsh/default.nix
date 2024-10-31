@@ -14,7 +14,7 @@
             dots = "cd /home/lad/nix/";
             mkdir = "mkdir -p";
             mkdircd = "mkdir -p $1 && cd $1";
-            shutdown = "shutdown -h now"
+            shutdown = "shutdown -h now";
             c = "clear";
             fm = "superfile";
             ff = "nitch";
