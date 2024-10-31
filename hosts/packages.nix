@@ -21,7 +21,6 @@
         zip                 # Compression tool for creating zip archives
         unzip               # Tool for extracting zip archives
         fzf                 # Command-line fuzzy finder
-        tree                # Recursive directory listing tool, displays folder structures in a tree format
         tldr                # Simplified, community-driven man pages with practical examples
         file                # Identifies file types
         wget                # Network downloader for retrieving files from the web
@@ -60,7 +59,7 @@
 
         # GPU & Graphics Tools
         glaxnimate          # Animation vector graphics tool
-        rocm-opencl-icd     # OpenCL support for AMD GPUs via ROCm
+       # rocm-opencl-icd     # OpenCL support for AMD GPUs via ROCm
 
         # Nix
         home-manager        # Configuration manager for declarative, version-controlled system setups
@@ -70,7 +69,7 @@
         noto-fonts
         font-awesome
         jetbrains-mono
-        noto-fonts-cjk
+        noto-fonts-cjk-sans
         powerline-fonts
         noto-fonts-emoji
         powerline-symbols
