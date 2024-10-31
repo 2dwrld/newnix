@@ -30,6 +30,8 @@
                                 nixpkgs.config.allowUnfree = true; 
                             };
                 modules = [
+                    ./hosts/modules
+		    ./hosts/packages.nix
                     ./hosts/configuration/configuration.nix
 
                     inputs.home-manager.nixosModules.default
