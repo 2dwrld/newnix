@@ -31,9 +31,8 @@
                     };
 
                 modules = [
-                    ./modules
-                    ./hosts/modules
         		    ./hosts/packages.nix
+                    ./hosts/modules/modules.nix
                     ./hosts/configuration/configuration.nix
 
                     inputs.home-manager.nixosModules.default

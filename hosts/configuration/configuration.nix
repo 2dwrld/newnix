@@ -8,13 +8,13 @@ in
     imports =
         [
             ../packages.nix
-            ../modules
+            ../modules/modules.nix
             ./hardware-configuration.nix
             inputs.home-manager.nixosModules.home-manager
         ];
 
     disabledModules = [
-        ./modules/xserver.nix
+        ../modules/xserver.nix
     ];
 
     home-manager = {
@@ -24,8 +24,10 @@ in
         };
     };
 
-    programs.zsh.enable = true;
-    programs.nixvim.enable = true;
+    programs = {
+        zsh.enable = true;
+        nixvim.enable = true;
+    }; 
 
     time.timeZone = "Europe/Moscow"; # Set your time zone.
     i18n.defaultLocale = "en_US.UTF-8"; # Select internationalisation properties.
