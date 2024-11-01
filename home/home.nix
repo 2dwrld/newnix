@@ -2,7 +2,7 @@
 
 {
     imports = [
-        ../modules/modules.nix
+        ../modules
     ];
 
     home = {
@@ -11,12 +11,7 @@
         stateVersion = "24.05";
     };
 
-    home.packages = [
-        pkgs.alacritty
-    ];
-
     programs = {
-        alacritty.enable = true;
         home-manager.enable = true;
     };
 

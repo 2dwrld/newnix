@@ -31,10 +31,10 @@
                     };
 
                 modules = [
-                    ./modules/modules.nix
+                    ./modules
 
         		    ./hosts/packages.nix
-                    ./hosts/modules/modules.nix
+                    ./hosts/modules/system
                     ./hosts/configuration/configuration.nix
 
                     inputs.home-manager.nixosModules.default
