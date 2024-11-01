@@ -1,7 +1,8 @@
 { config, lib, pkgs, ... }: {
     programs.alacritty = {
-        enable = true;  
-        settings = {   
+#        enable = true;
+
+        settings = {
             window.opacity = 0.95;
 
             font = {
@@ -14,6 +15,7 @@
             };
 
         colors.primary.background = "#161618";
+
         };
     };
 }
