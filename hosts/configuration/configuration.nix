@@ -10,11 +10,12 @@ in
             ../packages.nix
             ../modules/system
             ./hardware-configuration.nix
+
             inputs.home-manager.nixosModules.home-manager
         ];
 
     disabledModules = [
-        ../modules/xserver.nix
+        ../modules/system/xserver.nix
     ];
 
     home-manager = {

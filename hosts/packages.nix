@@ -11,7 +11,7 @@
         firefox-devedition  # Firefox Developer Edition browser
 
         # Development Tools
-        go             # Go programming language
+        go                  # Go programming language
         docker              # Containerization platform for deploying applications
 
         # CLI Utilities

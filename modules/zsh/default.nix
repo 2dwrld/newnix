@@ -27,8 +27,10 @@
             download = "xh --download";
         };
 
-        history.size = 10000;
-        history.path = "${config.xdg.dataHome}/zsh/history";
+        history = {
+            size = 10000;
+            path = "${config.xdg.dataHome}/zsh/history";
+        };
 
         oh-my-zsh = {
           enable = true;
