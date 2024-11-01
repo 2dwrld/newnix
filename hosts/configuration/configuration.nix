@@ -26,7 +26,6 @@ in
 
     programs.zsh.enable = true;
     programs.nixvim.enable = true;
-    programs.alacritty.enable = true;
 
     time.timeZone = "Europe/Moscow"; # Set your time zone.
     i18n.defaultLocale = "en_US.UTF-8"; # Select internationalisation properties.
