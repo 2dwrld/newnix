@@ -31,6 +31,8 @@
                     };
 
                 modules = [
+                    ./modules/modules.nix
+
         		    ./hosts/packages.nix
                     ./hosts/modules/modules.nix
                     ./hosts/configuration/configuration.nix
