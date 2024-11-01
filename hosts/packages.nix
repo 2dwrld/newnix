@@ -2,6 +2,9 @@
 
     environment.systemPackages = with pkgs; [
 
+        # Nix
+        home-manager        # Configuration manager for declarative, version-controlled system setups
+
         # Desktop Applications
         alacritty           # Fast, cross-platform terminal emulator
         telegram-desktop    # Telegram client for desktop
@@ -59,10 +62,6 @@
 
         # GPU & Graphics Tools
         glaxnimate          # Animation vector graphics tool
-       # rocm-opencl-icd     # OpenCL support for AMD GPUs via ROCm
-
-        # Nix
-        home-manager        # Configuration manager for declarative, version-controlled system setups
     ];
 
     fonts.packages = with pkgs; [
